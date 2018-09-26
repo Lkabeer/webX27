@@ -1,0 +1,33 @@
+* {
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+}
+
+.burgerMenu {
+    cursor: pointer;
+}
+
+.burgerMenu span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+.closeX span:first-child {
+    -ms-transform: translate(0px, 8px) rotate(225deg) ;
+    -webkit-transform: translate(0px, 8px) rotate(225deg) ;
+    transform: translate(0px, 8px) rotate(225deg) ;
+}
+
+.closeX span:nth-child(2) {
+    opacity: 0;
+    /* background-color: red; */
+}
+
+.closeX span:last-child {
+    -ms-transform: translate(0px, -8px) rotate(-225deg) ;
+    -webkit-transform: translate(0px, -8px) rotate(-225deg) ;
+    transform: translate(0px, -8px) rotate(-225deg) ;
+}

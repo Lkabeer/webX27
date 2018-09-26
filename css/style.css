@@ -3,11 +3,17 @@
     -webkit-transition: all 0.3s ease-in-out 0s;
 }
 
-.burgerMenu {
+#burgerMenuX {
     cursor: pointer;
 }
 
-.burgerMenu span {
+#burgerMenuX::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#burgerMenuX span {
     display: block;
     width: 25px;
     height: 4px;

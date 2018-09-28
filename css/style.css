@@ -1,19 +1,89 @@
 * {
+    box-sizing: border-box;
     transition: all 0.5s ease-in-out 0s;
     -webkit-transition: all 0.3s ease-in-out 0s;
 }
 
-#burgerMenuX {
-    cursor: pointer;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: auto;
+    /* max-width: 900px; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
 }
 
-#burgerMenuX::after {
+/* SideMenuX Menu X-Team */
+.sideNavX {
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, .9);
+    text-align: center;
+}
+
+.sideNavX ul {
+    list-style-type: none;
+    margin: 40px 20px;
+    padding: 0;
+}
+
+.sideNavX .closeBtn {
+    float: right;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: xx-large;  
+    margin-right: 15px; 
+}
+
+.sideNavX .closeBtn:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.sideNavX a {
+    text-decoration: none;
+    font-size: x-large;
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 10px 0px;
+    padding: 5px 0px;
+}
+
+.sideNavX a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* canvasNav X-Team */
+.overlayX {
+    width: 0px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+/* BurgerMenu X-Team */
+.burgerMenuX {
+    cursor: pointer;
+    float: right;
+    margin: 20px;
+}
+
+.burgerMenuX::after {
     content: "";
     display: block;
     clear: both;
 }
 
-#burgerMenuX span {
+.burgerMenuX span {
     display: block;
     width: 25px;
     height: 4px;

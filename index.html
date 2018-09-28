@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Burger Menu Icon | X-Team</title>
+    <title>Off-Canvas Menu | X-Team &#12484;</title>
     <link rel="shortcut icon" href="assets/favIcon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <!-- <span href="#menu">&#9776;</span>
-    <span href="#menu">&#8801;</span> -->
 
-    <div id="burgerMenuX" onclick="closeMenu(this)">
-        <span></span>
-        <span></span>
-        <span></span>
+<body>
+    <!-- canvasNav Overlay X-Team -->
+    <div id="convasNavX" class="overlayX" onclick="closeNavX()"></div>
+    <!-- sideNav X-Team -->
+    <nav id="sideNavX" class="sideNavX">
+        <span class="closeBtn" onclick="closeNavX()">&times;</span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div id="pageX">
+        <!-- BurgerMenu X-Team -->
+        <div id="burgerMenuX" class="burgerMenuX" onclick="toggleNav(this)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-    
+
     <script src="js/script.js"></script>
 </body>
+
 </html>

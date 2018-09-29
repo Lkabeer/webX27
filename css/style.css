@@ -7,11 +7,14 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     margin: auto;
-    /* max-width: 900px; */
     height: 100vh;
     display: flex;
     /* justify-content: center; */
     /* align-items: center; */
+}
+
+#pageX {
+    width: 100%;
 }
 
 /* SideMenuX Menu X-Team */
